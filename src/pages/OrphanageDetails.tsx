@@ -55,9 +55,9 @@ export default function OrphanageDetails() {
     <ScrollView style={styles.container}>
       <View style={styles.imagesContainer}>
         <ScrollView horizontal pagingEnabled>
-          {orphanages.images.map(image => {
+          {orphanages.images.map(image => (
             <Image key={image.id} style={styles.image} source={{ uri: image.url }} />
-          })}
+          ))}
         </ScrollView>
       </View>
 
